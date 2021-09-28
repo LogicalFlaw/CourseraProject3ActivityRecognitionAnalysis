@@ -17,8 +17,8 @@ The script performs the following steps:
 The function readdatafromfiles performs the following steps:
 1. Reads the file features.txt into a dataframe, and deletes from the dataframe the rows which do not correspond to measurements of a mean or a standard deviation.
 2. Reads the data for the training group from the file X_train and removes the columns which do not correspond to measurements of the mean or standard deviation, matching the sequential number of a column to the number of a feature in features.txt.
-4. Gives names to the columns in the resulting dataset using features.txt.
-5. Reads the data for subjects and types of activity from the files subject_train and y_train and merges these data as columns of a common dataframe.
-6. Repeats the steps 2-5 for the test group, reading from files X_test, subject_test and y_test. 
-7. Merges rows of the dataframes obtained in steps 5 and 6 into a single dataframe.
-8. Returns the result of step 7.
+3. Gives names to the columns in the resulting dataset using features.txt.
+4. Reads the data for subjects and types of activity from the files subject_train and y_train and merges these data as columns of a common dataframe.
+5. Repeats the steps 2-5 for the test group, reading from files X_test, subject_test and y_test. 
+6. Merges rows of the dataframes obtained in steps 5 and 6 into a single dataframe.
+7. Returns the result of step 6.
