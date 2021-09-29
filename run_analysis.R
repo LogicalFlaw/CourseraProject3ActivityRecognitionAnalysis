@@ -3,7 +3,7 @@
 library(stringr)  # for str_count function
 library(dplyr)
 
-### Given a dataset, create a dataset with averages of each variable by activity and subject
+### Given a dataset, the script creates a dataset with averages of each variable by activity and subject
 ### This function calls the function readdatafromfiles
 
 computeaverages<-function(){
@@ -62,7 +62,7 @@ readdatafromfiles<-function(){
   remove(trainDF_y,trainDF_x,trainDF_sub)
   
   ###### Do the same sequence of steps for test variables
-  ## reading data for subjects in training, saving them into data frames, naming columns
+  ## reading data for test subjects, saving them into data frames, naming columns
   testDF<-data.frame()
   fileLocation<-"UCI HAR Dataset/test/subject_test.txt"
   testDF_sub<-data.frame(read.delim(fileLocation,header = FALSE,sep = ""))
